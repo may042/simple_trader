@@ -70,6 +70,10 @@ class Ui_pokrivator_editor(object):
         self.editor_class_code = QtWidgets.QLineEdit(pokrivator_editor)
         self.editor_class_code.setGeometry(QtCore.QRect(390, 40, 131, 31))
         self.editor_class_code.setObjectName("editor_class_code")
+        self.radioButton_3 = QtWidgets.QRadioButton(pokrivator_editor)
+        self.radioButton_3.setGeometry(QtCore.QRect(350, 180, 82, 17))
+        self.radioButton_3.setObjectName("radioButton_3")
+        self.buttonGroup.addButton(self.radioButton_3)
 
         self.retranslateUi(pokrivator_editor)
         self.buttonBox.accepted.connect(pokrivator_editor.accept) # type: ignore
@@ -88,3 +92,4 @@ class Ui_pokrivator_editor(object):
         self.label_5.setText(_translate("pokrivator_editor", "если бид больше"))
         self.label_6.setText(_translate("pokrivator_editor", "Код инструмента"))
         self.label_7.setText(_translate("pokrivator_editor", "Класс"))
+        self.radioButton_3.setText(_translate("pokrivator_editor", "ИИС"))
